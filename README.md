@@ -12,11 +12,13 @@ Analyze DNS traffic using Wireshark and understand DNS record types and security
 - Filtered packets using "dns" filter.
 - Identified DNS record types (A, AAAA, CNAME).
 - Observed query names and response IPs.
+- Used nslookup to look up MX records for gmail.com, learning how email traffic is routed through DNS.
 
 4. My findings :
 - A records links domain names to IPv4 addresses which uses 32-bit (192.168.1.1).
 - AAAA records links domain names to IPv6 addresses which uses 128-bit (2001:0db8:85a3::8a2e:0370:7334).
 - CNAME records show domain aliases.
+- MX record tells which mail servers receive email for a domain.
 - No suspicious DNS traffic detected.
 
 5. Research to find more way a system could be attacked:
